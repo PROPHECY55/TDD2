@@ -9,10 +9,10 @@
 // 5 = 4
 // 6 = 0
 
-function calculateSum(arr){
+function calculateSum(arr) {
     const lookup = [0, 0, 2, 0, 4, 0];
 
     return arr.reduce((acc, num) => {
-        return acc + parseInt(num - 1);
+        return acc + lookup[num - 1];
     }, 0);
 }
