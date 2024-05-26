@@ -15,4 +15,6 @@ function calculateSum(arr) {
     return arr.reduce((acc, num) => {
         return acc + lookup[num - 1];
     }, 0);
+
+    
 }
